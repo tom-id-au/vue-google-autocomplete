@@ -1,18 +1,20 @@
 <template>
-    <input
-        ref="autocomplete"
-        type="text"
-        :class="classname"
-        :id="id"
-        :placeholder="placeholder"
-        :disabled="disabled"
-        v-model="autocompleteText"
-        @focus="onFocus()"
-        @blur="onBlur()"
-        @change="onChange"
-        @keypress="onKeyPress"
-        @keyup="onKeyUp"
-    />
+  <div>
+        <input
+          ref="autocomplete"
+          type="text"
+          :class="classname"
+          :id="id"
+          :placeholder="placeholder"
+          :disabled="disabled"
+          v-model="autocompleteText"
+          @focus="onFocus()"
+          @blur="onBlur()"
+          @change="onChange"
+          @keypress="onKeyPress"
+          @keyup="onKeyUp"
+        />
+  </div>
 </template>
 
 <script>
